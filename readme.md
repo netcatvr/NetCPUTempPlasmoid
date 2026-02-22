@@ -11,9 +11,7 @@ Just the temperature.
 ## What it does
 
 - Reads CPU package temperature via `lm_sensors`
-- Updates automatically
-- Scales with widget size
-- Supports custom fonts
+- Renders it nicely with a nice modern font
 
 ---
 
@@ -33,7 +31,7 @@ sudo sensors-detect
 
 Clone the repository:
 
-git clone https://github.com/netcatvr/NetCPUTemp.git
+git clone https://github.com/netcatvr/NetCPUTempPlasmoid.git
 
 Copy it into your local plasmoid directory:
 
