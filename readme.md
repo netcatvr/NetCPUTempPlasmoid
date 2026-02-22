@@ -29,16 +29,17 @@ sudo sensors-detect
 
 Clone the repository:
 
-git clone https://github.com/netcatvr/NetCPUTempPlasmoid.git
+``git clone https://github.com/netcatvr/NetCPUTempPlasmoid.git``
 
 Copy it into your local plasmoid directory:
 
-mkdir -p ~/.local/share/plasma/plasmoids/
-cp -r NetCPUTemp ~/.local/share/plasma/plasmoids/com.example.helloworld
+``mkdir -p ~/.local/share/plasma/plasmoids/``
+
+``cp -r NetCPUTemp ~/.local/share/plasma/plasmoids/com.example.helloworld``
 
 Restart Plasma:
 
-killall plasmashell && plasmashell --replace &
+``killall plasmashell && plasmashell --replace &``
 
 Then add it from **Add Widgets**.
 
