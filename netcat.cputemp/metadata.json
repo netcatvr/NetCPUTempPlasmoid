@@ -1,0 +1,20 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "netcatvr@proton.me",
+                "Name": "Netcat"
+            }
+        ],
+        "Category": "System Information",
+        "Description": "Simple GPU Package Temperature Display Widget",
+        "Icon": "cpu",
+        "Id": "netcat.cputemp",
+        "Name": "Netcat CPUTemp Widget",
+        "Version": "1",
+        "Website": "https://netcat.moe",
+        "BugReportUrl": "https://netcat.moe/theresnobugreportlol"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "KPackageStructure": "Plasma/Applet"
+}
