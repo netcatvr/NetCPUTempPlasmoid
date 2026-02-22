@@ -2,9 +2,7 @@
 
 A minimal KDE Plasma 6 widget that displays your CPU package temperature in real time.
 
-No background.  
-No clutter.  
-Just the temperature.
+![image](https://data.netcat.moe/netshot_1771783308_b8f6993a292c7cee.png)
 
 ---
 
