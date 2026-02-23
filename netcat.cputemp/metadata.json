@@ -11,7 +11,7 @@
         "Icon": "cpu",
         "Id": "netcat.cputemp",
         "Name": "Netcat CPUTemp Widget",
-        "Version": "1",
+        "Version": "1.1",
         "Website": "https://netcat.moe",
         "BugReportUrl": "https://netcat.moe/theresnobugreportlol"
     },

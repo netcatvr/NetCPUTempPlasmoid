@@ -23,6 +23,53 @@ On Arch / EndeavourOS:
 sudo pacman -S lm_sensors  
 sudo sensors-detect
 
+## ⚠️ Important (CPU Sensor Module)
+
+If the widget shows nothing, your CPU temperature kernel module may not be loaded.
+
+### Intel CPUs
+
+Load the `coretemp` module manually:
+
+```bash
+sudo modprobe coretemp
+```
+
+To make it load automatically on boot:
+
+```bash
+echo coretemp | sudo tee /etc/modules-load.d/coretemp.conf
+```
+
+Verify it works:
+
+```bash
+sensors
+```
+
+You should see a line similar to:
+
+```
+Package id 0:  +37.0°C
+```
+
+---
+
+### AMD CPUs
+
+If you're on AMD and no temperature appears, try loading:
+
+```bash
+sudo modprobe k10temp
+```
+
+Then verify again with:
+
+```bash
+sensors
+```
+
+
 ---
 
 ## Installation

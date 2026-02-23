@@ -20,7 +20,7 @@ PlasmoidItem {
     }
 
     function refresh() {
-        execSource.connectedSources = ["bash -lc '" + "../scripts/gettemp.sh" + "'"]
+        execSource.connectedSources = ["sensors | awk '/Package id 0:/ {print $4; exit} /Tctl:/ {print $2; exit} /Tdie:/ {print $2; exit}'"]
     }
 
     Plasma5Support.DataSource {
