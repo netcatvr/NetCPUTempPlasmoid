@@ -20,7 +20,9 @@ PlasmoidItem {
     }
 
     function refresh() {
-        execSource.connectedSources = ["sensors | awk '/Package id 0:/ {print $4; exit} /Tctl:/ {print $2; exit} /Tdie:/ {print $2; exit}'"]
+        execSource.connectedSources = [
+            "sensors | awk '/Package id 0:/ {gsub(/\\+/, \"\", $4); print $4; exit} /Tctl:/ {gsub(/\\+/, \"\", $2); print $2; exit} /Tdie:/ {gsub(/\\+/, \"\", $2); print $2; exit}'"
+        ]
     }
 
     Plasma5Support.DataSource {
